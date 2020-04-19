@@ -1,4 +1,4 @@
-res=0
+        res=0
         n=len(s)
         count=2
         for i in range(n):
