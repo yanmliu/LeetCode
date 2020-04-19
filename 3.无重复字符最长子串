@@ -1,0 +1,13 @@
+res=0
+        n=len(s)
+        count=2
+        for i in range(n):
+            #count=1
+            count=count-1
+            if i+count<=n-1:
+                while s[i+count] not in s[i:(i+count)] :
+                    count +=1
+                    if i+count>n-1:
+                        break
+            res=max(count,res)
+        return res
